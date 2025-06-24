@@ -101,7 +101,7 @@ a:active {
         left:100vw;
     }
     to{
-        left: -1100px;
+        left: -1300px;
     }
 }
 @media (max-width:700px){
