@@ -50,7 +50,7 @@ img{
 
 #button{
     /* box-sizing: border-box; */
-    width: 50%;
+    width: 70%;
     height: 100%;
     /* border: 2px solid white; */
     display: flex;
@@ -101,13 +101,14 @@ a:active {
         left:100vw;
     }
     to{
-        left: -1300px;
+        left: -1100px;
     }
 }
 @media (max-width:700px){
     #navigation{
         flex-direction: column;
-        height: 280px;
+        height: 350px;
+        position: static;
     }
     #button{
         flex-direction: column-reverse;
@@ -118,10 +119,10 @@ a:active {
         width: 100%;
     }
     #box{
-        height: 280px;
+        height: 350px;
     }
     #Disclaimer{
-        top:300px;
+        top:360px;
         
         
     }
@@ -140,7 +141,7 @@ a:active {
 }
 .card{
     height: 80%;
-    width: 95%;
+    width: 80%;
     /* border: 2px solid green; */
     border-radius: 10px;
     box-shadow: 0px 0px 50px green;
@@ -162,18 +163,25 @@ a:active {
     flex-direction: row;
     justify-content: space-around; 
     box-shadow: 0px 0px 10px red;
+
+    
+}
+.item:hover{
+    transform: scale(1.02);
 }
 #description{
     background-color:darkgray;
     border-radius: 20px;
-    width: 52%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    padding: 2px;
+    box-sizing: border-box;
 }
 .img{
-    width: 45%;
+    width: 27%;
     /* border: 1px solid black; */
     background-size: cover; /* Ensures the image covers the entire area */
       background-repeat: no-repeat; /* Prevents tiling */
@@ -220,6 +228,53 @@ a:active {
     background-image: url("mutton.jpeg");
     
 }
+
+h3{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    animation-name: color_change;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 25px;
+    position: sticky;
+}
+#content{
+    overflow: auto;
+    
+}
+p{
+    /* overflow: auto; */
+    color:blanchedalmond;
+    text-align: center;
+    animation-name: up_move;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    
+    position: relative;
+    
+}
+@keyframes up_move {
+    from{
+        top:400px;
+    }
+    to{
+        top:-500px
+    }
+}
+
+@keyframes color_change {
+    from{
+        color: red;
+    }
+    to{
+        color: yellow;
+    }
+}
+
 
 
 
